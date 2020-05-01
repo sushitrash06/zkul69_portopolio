@@ -130,6 +130,46 @@ margin-bottom: 3%;
 }
 .about-btn{
     padding: 15px 35
+
+}
+ul.art-content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.art-content li{
+    padding: 20px;
+    height: 290px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+.art-left{
+    flex-basis: 20%;
+    background-image: url(img/gambar1.jpg);
+}
+.art-right{
+    flex-basis: 60%;
+}
+.art-area p{
+    max-width: 800px;
+    margin-bottom: 35px;
+    line-height: 1.5;
+    text-align: left;
+    padding-left: 0px;
+}
+.art-title{
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+.art-right h3{
+margin-bottom: 3%;
+}
+.about-btn{
+    padding: 15px 35
 }
 @media screen and (max-width:768px){
     header{
@@ -160,6 +200,12 @@ margin-bottom: 3%;
     .about-content li{
         padding: 8px;
     }
+.art-left,.art-right{
+    flex-basis: 100%;
+}
+.art-content li{
+    padding: 8px;
+}
 }
 @media screen and (max-width:500px){
     header{
@@ -185,19 +231,6 @@ margin-bottom: 3%;
         padding: 0 20px;
         line-height: 2;
     }
-
+ 
 }
-aside {
-    margin-left: auto;
-    width: 25%;
-    height: 700px;
-    display: flex;
-    margin-left: auto;
-    border-left: 1px solid grey;
-}
-#biodata {
-    text-align: left;
-    color:darkcyan;
-}
-
 
